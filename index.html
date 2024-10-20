@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+  <!-- Cabeçalho do jogo contendo o título principal e subtítulo -->
+  <header>
+    <h1>Nexus J.V</h1> <!-- Nome do jogo -->
+    <h3>jogo da velha</h3> <!-- Subtítulo explicando o jogo -->
+  </header>
+
+  <!-- Seção principal onde o jogo é exibido -->
+  <main>
+    <!-- Exibe os jogadores e seus respectivos símbolos (X e O) -->
+    <h2>Player 1: <strong id="x">x</strong> Player 2: <strong id="o">o</strong></h2>
+    
+    <!-- Container que contém as células do tabuleiro do jogo -->
+    <div class="container" data-container>
+      <!-- Cada uma das 9 células do tabuleiro -->
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+
+    <!-- Título que exibe a seção de contagem de vitórias -->
+    <h3 id="vitorias">Vitórias:</h3>
+
+    <!-- Seção de contagem de vitórias e empates -->
+    <div class="contagem">
+      <!-- Exibe a contagem de vitórias do Player 1 (X) -->
+      <div class="div-contagem">Player 1 <p id="count-x">0</p></div>
+      <!-- Exibe a contagem de vitórias do Player 2 (O) -->
+      <div class="div-contagem">Player 2 <p id="count-o">0</p></div>
+      <!-- Exibe a contagem de empates -->
+      <div class="div-contagem">Empates <p id="count-draws">0</p></div>
+      <!-- Botão para resetar a contagem -->
+      <button id="buttonReset">Zerar</button>
+    </div>
+
+    <!-- Mensagem que aparece quando há um vencedor -->
+    <div class="winning-message" data-winning-message>
+      <!-- Texto que exibe quem venceu -->
+      <p class="winning-message-text" data-winning-message-text>X venceu!</p>
+      <!-- Botão para reiniciar o jogo -->
+      <button class="winning-message-button" data-restart-button>Reiniciar!</button>
+    </div>
+  </main>
+
+  <!-- Rodapé fixo com o nome do desenvolvedor e link para o GitHub -->
+  <footer id="fixarRodape">
+    Projeto desenvolvido por Diogo Henrique
+    <!-- Imagem do GitHub com link para o perfil do desenvolvedor -->
+    <p><img src="./img/github.256x249.png" alt="github"> 
+    <a href="https://github.com/DHstation" target="_blank">DHstation</a></p>    
+  </footer>
+
+  <!-- Inclusão do arquivo de script para funcionamento do jogo -->
+  <script src="./scripts.js"></script>
+</body>
+</html>

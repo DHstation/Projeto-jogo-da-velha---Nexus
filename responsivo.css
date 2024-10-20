@@ -1,0 +1,19 @@
+@media (max-width: 410px){
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .div-contagem {
+    width: 4.8em;
+    padding: 3px 0px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #fixarRodape {
+    position: absolute;
+    bottom: 0;
+    width: 93.9%;
+  }
+}
